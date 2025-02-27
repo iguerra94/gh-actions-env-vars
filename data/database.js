@@ -10,6 +10,7 @@ const client = new MongoClient(uri);
 
 console.log('Trying to connect to db');
 
+
 try {
   await client.connect();
   await client.db(dbName).command({ ping: 1 });
